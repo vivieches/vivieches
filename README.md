@@ -88,6 +88,18 @@ const vitoria: Developer = {
 
 <img src="https://streak-stats.demolab.com/?user=vivieches&cache_seconds=1800&background=0B0B12&ring=FF4DA6&fire=9B5CFF&currStreakLabel=FF4DA6&border=FF4DA6&sideLabels=FF8CC8&dates=B8B8C0&currStreakNum=F5F5F5&sideNums=F5F5F5"/>
 
+<br/><br/>
+
+<img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=vivieches&theme=radical"/>
+
+<table>
+<tr>
+<td><img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=vivieches&theme=radical"/></td>
+<td><img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=vivieches&theme=radical"/></td>
+<td><img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=vivieches&theme=radical&utcOffset=-3"/></td>
+</tr>
+</table>
+
 </div>
 
 <br/>
