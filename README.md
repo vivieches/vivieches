@@ -5,7 +5,7 @@
 <!-- ▓▓▓ HERO ▓▓▓ -->
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=FF4DA6,9B5CFF&height=260&text=Vitoria%20Ferreira&fontSize=54&fontColor=FFFFFF&animation=fadeIn&fontAlignY=42&desc=AI%20Content%20Engineer%20%E2%80%94%20Full%20Stack%20Developer&descAlignY=62&descFontColor=FFE0F0&descFontSize=17"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=FF4DA6,9B5CFF,7B2FBE&height=260&text=Vitoria%20Ferreira&fontSize=54&fontColor=FFFFFF&animation=fadeIn&fontAlignY=42&desc=AI%20Content%20Engineer%20%E2%80%94%20Full%20Stack%20Developer&descAlignY=62&descFontColor=FFE0F0&descFontSize=17"/>
 
 <br/>
 
@@ -16,6 +16,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-FF4DA6?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/vitória-ferreira-162643281)
 [![Instagram](https://img.shields.io/badge/Instagram-9B5CFF?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/viviexec.es)
 [![TikTok](https://img.shields.io/badge/TikTok-FF8CC8?style=for-the-badge&logo=tiktok&logoColor=111111)](https://tiktok.com/@viviexec.es)
+[![YouTube](https://img.shields.io/badge/YouTube-FF4DA6?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@viviwsd)
 
 <br/>
 
@@ -206,6 +207,7 @@ Sistema web en producción para estudio de belleza nupcial en España — panel 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-FF4DA6?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/vitória-ferreira-162643281)
 [![Instagram](https://img.shields.io/badge/Instagram-9B5CFF?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/viviexec.es)
 [![TikTok](https://img.shields.io/badge/TikTok-FF8CC8?style=for-the-badge&logo=tiktok&logoColor=111111)](https://tiktok.com/@viviexec.es)
+[![YouTube](https://img.shields.io/badge/YouTube-FF4DA6?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@viviwsd)
 
 <br/>
 
