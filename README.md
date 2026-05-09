@@ -198,6 +198,6 @@ Sistema web en producción para estudio de belleza nupcial en España — panel 
 
 <br/>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=FF4DA6,9B5CFF,0B0B12&height=120&section=footer"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=FF4DA6&height=120&section=footer"/>
 
 </div>
