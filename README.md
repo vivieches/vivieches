@@ -53,29 +53,44 @@ const vitoria: Developer = {
 
 <div align="center">
 
-**— Frontend —**
+![Frontend](https://img.shields.io/badge/──%20Frontend%20──-FF4DA6?style=flat-square&labelColor=FF4DA6)
 
-<img src="https://skillicons.dev/icons?i=react,nextjs,ts,tailwind,html,css&theme=dark&perline=8"/>
+![React](https://img.shields.io/badge/React-FF4DA6?style=for-the-badge&logo=react&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-e0559a?style=for-the-badge&logo=next.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-9B5CFF?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind-FF4DA6?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-e0559a?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-9B5CFF?style=for-the-badge&logo=css3&logoColor=white)
 
 <br/>
 
-**— Backend & Base de Datos —**
+![Backend](https://img.shields.io/badge/──%20Backend%20%26%20Base%20de%20Datos%20──-9B5CFF?style=flat-square&labelColor=9B5CFF)
 
-<img src="https://skillicons.dev/icons?i=nodejs,python,express,prisma,postgres,supabase&theme=dark&perline=8"/>
+![Node.js](https://img.shields.io/badge/Node.js-FF4DA6?style=for-the-badge&logo=node.js&logoColor=white)
+![Python](https://img.shields.io/badge/Python-e0559a?style=for-the-badge&logo=python&logoColor=white)
+![Express](https://img.shields.io/badge/Express-9B5CFF?style=for-the-badge&logo=express&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-FF4DA6?style=for-the-badge&logo=prisma&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-e0559a?style=for-the-badge&logo=postgresql&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-9B5CFF?style=for-the-badge&logo=supabase&logoColor=white)
 
 <br/>
 
-**— IA & Integraciones —**
+![IA](https://img.shields.io/badge/──%20IA%20%26%20Integraciones%20──-FF8CC8?style=flat-square&labelColor=FF8CC8)
 
 [![OpenAI](https://img.shields.io/badge/OpenAI-FF4DA6?style=for-the-badge&logo=openai&logoColor=white)](https://openai.com)
 [![Claude](https://img.shields.io/badge/Anthropic%20Claude-9B5CFF?style=for-the-badge&logo=anthropic&logoColor=white)](https://anthropic.com)
-[![MiniMax](https://img.shields.io/badge/MiniMax%20AI-FF8CC8?style=for-the-badge&logoColor=111111)](https://minimax.com)
+[![MiniMax](https://img.shields.io/badge/MiniMax%20AI-e0559a?style=for-the-badge&logoColor=white)](https://minimax.com)
 
 <br/>
 
-**— DevOps & Herramientas —**
+![DevOps](https://img.shields.io/badge/──%20DevOps%20%26%20Herramientas%20──-FF4DA6?style=flat-square&labelColor=FF4DA6)
 
-<img src="https://skillicons.dev/icons?i=docker,git,github,vercel,figma,vscode&theme=dark&perline=8"/>
+![Docker](https://img.shields.io/badge/Docker-FF4DA6?style=for-the-badge&logo=docker&logoColor=white)
+![Git](https://img.shields.io/badge/Git-e0559a?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-9B5CFF?style=for-the-badge&logo=github&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-FF4DA6?style=for-the-badge&logo=vercel&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-e0559a?style=for-the-badge&logo=figma&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS%20Code-9B5CFF?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
 </div>
 
