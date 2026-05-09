@@ -2,11 +2,10 @@
      ║         VITORIA FERREIRA — GITHUB PROFILE README        ║
      ╚══════════════════════════════════════════════════════════╝ -->
 
-<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ HERO ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
-
+<!-- ▓▓▓ HERO ▓▓▓ -->
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=venom&color=0B0B12,1E0A3C,FF4DA6&height=260&section=header&text=Vitoria%20Ferreira&fontSize=54&fontColor=FFFFFF&animation=fadeIn&fontAlignY=42&desc=AI%20Content%20Engineer%20%E2%80%94%20Full%20Stack%20Developer&descAlignY=62&descFontColor=FF8CC8&descFontSize=17"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=FF4DA6,9B5CFF&height=260&text=Vitoria%20Ferreira&fontSize=54&fontColor=FFFFFF&animation=fadeIn&fontAlignY=42&desc=AI%20Content%20Engineer%20%E2%80%94%20Full%20Stack%20Developer&descAlignY=62&descFontColor=FFE0F0&descFontSize=17"/>
 
 <br/>
 
@@ -26,8 +25,7 @@
 
 <br/>
 
-<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ABOUT ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
-
+<!-- ▓▓▓ ABOUT ▓▓▓ -->
 ## `◈` About Me
 
 ```ts
@@ -49,8 +47,7 @@ const vitoria: Developer = {
 
 <br/>
 
-<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ STACK ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
-
+<!-- ▓▓▓ STACK ▓▓▓ -->
 ## `◈` Tech Stack
 
 <div align="center">
@@ -83,8 +80,7 @@ const vitoria: Developer = {
 
 <br/>
 
-<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ STATS ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
-
+<!-- ▓▓▓ STATS ▓▓▓ -->
 ## `◈` GitHub Stats
 
 <div align="center">
@@ -105,16 +101,11 @@ const vitoria: Developer = {
 </tr>
 </table>
 
-<br/>
-
-<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=vivieches&bg_color=0B0B12&color=FF8CC8&line=FF4DA6&point=9B5CFF&area=true&hide_border=true"/>
-
 </div>
 
 <br/>
 
-<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ TROPHIES ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
-
+<!-- ▓▓▓ TROPHIES ▓▓▓ -->
 ## `◈` Trophies
 
 <div align="center">
@@ -123,8 +114,7 @@ const vitoria: Developer = {
 
 <br/>
 
-<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ PROJECTS ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
-
+<!-- ▓▓▓ PROJECTS ▓▓▓ -->
 ## `◈` Featured Projects
 
 <table>
@@ -184,8 +174,7 @@ Sistema web em produção para estúdio de beleza nupcial na Espanha — painel 
 
 <br/>
 
-<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ CURRENT FOCUS ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
-
+<!-- ▓▓▓ CURRENT FOCUS ▓▓▓ -->
 ## `◈` Currently Building
 
 ```
@@ -198,8 +187,7 @@ Sistema web em produção para estúdio de beleza nupcial na Espanha — painel 
 
 <br/>
 
-<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ SNAKE ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
-
+<!-- ▓▓▓ SNAKE ▓▓▓ -->
 ## `◈` Contribution Snake
 
 <div align="center">
@@ -212,8 +200,7 @@ Sistema web em produção para estúdio de beleza nupcial na Espanha — painel 
 
 <br/>
 
-<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ FOOTER ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
-
+<!-- ▓▓▓ FOOTER ▓▓▓ -->
 <div align="center">
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-FF4DA6?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/vitória-ferreira-162643281)
