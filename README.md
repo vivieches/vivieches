@@ -9,7 +9,7 @@
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=17&duration=2800&pause=1000&color=FF4DA6&center=true&vCenter=true&width=600&lines=Building+AI+content+systems+%E2%9C%A8;Full+Stack+Dev+%E2%80%94+React+%7C+Next.js+%7C+Node.js;Creating+modern+AI+pipelines+%F0%9F%A4%96;Open+to+work+%E2%80%94+Let%27s+build+together+%F0%9F%9A%80" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=17&duration=2800&pause=1000&color=FF4DA6&center=true&vCenter=true&width=620&lines=Construyendo+sistemas+IA+para+creadores+%E2%9C%A8;Full+Stack+Dev+%E2%80%94+React+%7C+Next.js+%7C+Node.js;Creando+pipelines+de+IA+modernas+%F0%9F%A4%96;Open+to+work+%E2%80%94+Hablemos+%F0%9F%9A%80" />
 
 <br/><br/>
 
@@ -19,36 +19,36 @@
 
 <br/>
 
-![Visitors](https://komarev.com/ghpvc/?username=vivieches&color=FF4DA6&style=for-the-badge&label=PROFILE+VIEWS)
+![Visitors](https://komarev.com/ghpvc/?username=vivieches&color=FF4DA6&style=for-the-badge&label=VISITAS+AL+PERFIL)
 
 </div>
 
 <br/>
 
 <!-- ▓▓▓ ABOUT ▓▓▓ -->
-## `◈` About Me
+## `◈` Sobre mí
 
 ```ts
 const vitoria: Developer = {
-  name:     "Vitoria Ferreira",
-  role:     "Full Stack Developer + AI Engineer",
-  location: "São Paulo, Brasil 🇧🇷",
-  focus:    ["AI systems", "content automation", "product web"],
+  nombre:   "Vitoria Ferreira",
+  rol:      "Full Stack Developer + AI Engineer",
+  ciudad:   "Madrid, España 🇪🇸",
+  foco:     ["sistemas IA", "automatización de contenido", "producto web"],
   building: ["MiniMax Dashboard", "LeadHunter", "Preprueba"],
-  status:   "open to work 🟢",
+  estado:   "open to work 🟢",
 };
 ```
 
-- 🤖 &nbsp;Construindo sistemas IA para criação e gestão de conteúdo
-- 💻 &nbsp;Full Stack com React, Next.js, TypeScript e Node.js
-- ⚡ &nbsp;Automação, dashboards modernos e APIs escaláveis
-- 🎯 &nbsp;Focada em produto: do banco de dados até o front
-- 🌍 &nbsp;Projetos no Brasil e na Espanha
+- 🤖 &nbsp;Construyendo sistemas IA para creación y gestión de contenido
+- 💻 &nbsp;Full Stack con React, Next.js, TypeScript y Node.js
+- ⚡ &nbsp;Automatización, dashboards modernos y APIs escalables
+- 🎯 &nbsp;Enfocada en producto: desde la base de datos hasta el front
+- 🌍 &nbsp;Proyectos en España y Brasil
 
 <br/>
 
 <!-- ▓▓▓ STACK ▓▓▓ -->
-## `◈` Tech Stack
+## `◈` Stack Tecnológico
 
 <div align="center">
 
@@ -58,13 +58,13 @@ const vitoria: Developer = {
 
 <br/>
 
-**— Backend & Database —**
+**— Backend & Base de Datos —**
 
 <img src="https://skillicons.dev/icons?i=nodejs,python,express,prisma,postgres,supabase&theme=dark&perline=8"/>
 
 <br/>
 
-**— AI & Integrations —**
+**— IA & Integraciones —**
 
 [![OpenAI](https://img.shields.io/badge/OpenAI-FF4DA6?style=for-the-badge&logo=openai&logoColor=white)](https://openai.com)
 [![Claude](https://img.shields.io/badge/Anthropic%20Claude-9B5CFF?style=for-the-badge&logo=anthropic&logoColor=white)](https://anthropic.com)
@@ -72,7 +72,7 @@ const vitoria: Developer = {
 
 <br/>
 
-**— DevOps & Tools —**
+**— DevOps & Herramientas —**
 
 <img src="https://skillicons.dev/icons?i=docker,git,github,vercel,figma,vscode&theme=dark&perline=8"/>
 
@@ -106,7 +106,7 @@ const vitoria: Developer = {
 <br/>
 
 <!-- ▓▓▓ TROPHIES ▓▓▓ -->
-## `◈` Trophies
+## `◈` Trofeos
 
 <div align="center">
 <img src="https://github-profile-trophy.vercel.app/?username=vivieches&theme=radical&no-frame=true&no-bg=true&column=6&margin-w=8"/>
@@ -115,32 +115,32 @@ const vitoria: Developer = {
 <br/>
 
 <!-- ▓▓▓ PROJECTS ▓▓▓ -->
-## `◈` Featured Projects
+## `◈` Proyectos Destacados
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
 ### 🤖 Minimax Content Dashboard
-> AI-powered content creation & management system
+> Sistema de creación y gestión de contenido con IA
 
 `Next.js` `TypeScript` `MiniMax AI` `Supabase` `Node.js`
 
-Dashboard completo para criação, gestão e publicação de conteúdo com IA. Pipelines automatizadas, geração de scripts e scheduling inteligente.
+Dashboard completo para crear, gestionar y publicar contenido con IA. Pipelines automatizadas, generación de guiones y scheduling inteligente.
 
-![Status](https://img.shields.io/badge/status-in%20dev-FF4DA6?style=flat-square&logo=vercel&logoColor=white)
+![Estado](https://img.shields.io/badge/estado-en%20desarrollo-FF4DA6?style=flat-square&logo=vercel&logoColor=white)
 
 </td>
 <td width="50%" valign="top">
 
 ### 🎯 LeadHunter
-> Commercial prospecting & lead automation platform
+> Plataforma de prospección comercial y automatización de leads
 
 `Next.js` `Node.js` `PostgreSQL` `Supabase`
 
-Plataforma para prospecção comercial, organização de leads, análise de dados e automações de fluxo de vendas.
+Plataforma para prospección comercial, organización de leads, análisis de datos y automatización del flujo de ventas.
 
-![Status](https://img.shields.io/badge/status-in%20dev-9B5CFF?style=flat-square&logo=vercel&logoColor=white)
+![Estado](https://img.shields.io/badge/estado-en%20desarrollo-9B5CFF?style=flat-square&logo=vercel&logoColor=white)
 
 </td>
 </tr>
@@ -148,23 +148,23 @@ Plataforma para prospecção comercial, organização de leads, análise de dado
 <td width="50%" valign="top">
 
 ### 🎓 Preprueba
-> SaaS educational platform in Spanish
+> Plataforma educativa SaaS en español
 
 `React` `Node.js` `Express` `PostgreSQL`
 
-Web app + API voltada para preparação de provas em espanhol. Modelo SaaS com organização de conteúdo e evolução de estudo.
+Web app + API orientada a la preparación de exámenes en español. Modelo SaaS con organización de contenido y seguimiento del progreso.
 
-![Status](https://img.shields.io/badge/status-in%20dev-FF8CC8?style=flat-square&logo=vercel&logoColor=111111)
+![Estado](https://img.shields.io/badge/estado-en%20desarrollo-FF8CC8?style=flat-square&logo=vercel&logoColor=111111)
 
 </td>
 <td width="50%" valign="top">
 
 ### 💄 Marseea Beauty Studio
-> Full web system for bridal beauty studio · Spain
+> Sistema web completo para estudio de belleza nupcial · España
 
 `Next.js` `Prisma` `PostgreSQL` `Tailwind CSS`
 
-Sistema web em produção para estúdio de beleza nupcial na Espanha — painel admin, blog, agendamento e SEO técnico.
+Sistema web en producción para estudio de belleza nupcial en España — panel admin, blog, reservas y SEO técnico.
 
 [![Live](https://img.shields.io/badge/live-marseea.com-FF4DA6?style=flat-square&logo=vercel&logoColor=white)](https://marseea.com)
 
@@ -175,20 +175,20 @@ Sistema web em produção para estúdio de beleza nupcial na Espanha — painel 
 <br/>
 
 <!-- ▓▓▓ CURRENT FOCUS ▓▓▓ -->
-## `◈` Currently Building
+## `◈` Actualmente Construyendo
 
 ```
-  AI content pipelines       ████████░░  80%
-  Minimax Dashboard          ██████░░░░  60%
-  LeadHunter backend         ████░░░░░░  40%
-  Preprueba SaaS model       ███░░░░░░░  30%
-  Construcciones Escar       █████████░  90%
+  Pipelines de contenido IA    ████████░░  80%
+  Minimax Dashboard            ██████░░░░  60%
+  LeadHunter backend           ████░░░░░░  40%
+  Preprueba modelo SaaS        ███░░░░░░░  30%
+  Construcciones Escar         █████████░  90%
 ```
 
 <br/>
 
 <!-- ▓▓▓ SNAKE ▓▓▓ -->
-## `◈` Contribution Snake
+## `◈` Serpiente de Contribuciones
 
 <div align="center">
 <picture>
