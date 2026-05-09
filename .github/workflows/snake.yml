@@ -19,8 +19,8 @@ jobs:
         with:
           github_user_name: vivieches
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=FF69B4
+            dist/github-contribution-grid-snake.svg?color_snake=FF1493&color_dots[0]=0d0d0d&color_dots[1]=FFB6C1&color_dots[2]=FF69B4&color_dots[3]=FF1493&color_dots[4]=C71585
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=FF1493&color_dots[0]=161b22&color_dots[1]=FFB6C1&color_dots[2]=FF69B4&color_dots[3]=FF1493&color_dots[4]=C71585
 
       - uses: crazy-max/ghaction-github-pages@v4
         with:
