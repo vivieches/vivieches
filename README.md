@@ -203,19 +203,6 @@ Sistema web en producción para estudio de belleza nupcial en España — panel 
 
 <br/>
 
-<!-- ▓▓▓ SNAKE ▓▓▓ -->
-## `◈` Serpiente de Contribuciones
-
-<div align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/vivieches/vivieches/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/vivieches/vivieches/output/github-contribution-grid-snake.svg">
-  <img alt="snake" src="https://raw.githubusercontent.com/vivieches/vivieches/output/github-contribution-grid-snake.svg">
-</picture>
-</div>
-
-<br/>
-
 <!-- ▓▓▓ FOOTER ▓▓▓ -->
 <div align="center">
 
