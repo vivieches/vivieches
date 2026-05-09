@@ -12,7 +12,7 @@
 
 <div align="center">
 
-\`\`\`
+```
 ╔══════════════════════════════════════════════════════╗
 ║  > whoami                                            ║
 ║  Vitoria Ferreira — Full Stack Developer 🩷          ║
@@ -21,7 +21,7 @@
 ║  > status: open to work 🟢                           ║
 ║  > building: do banco de dados até o front           ║
 ╚══════════════════════════════════════════════════════╝
-\`\`\`
+```
 
 </div>
 
