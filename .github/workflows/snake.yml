@@ -22,9 +22,9 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - name: Make snake and dots pink
+      - name: Make snake pink
         run: |
-          # light mode SVG
+          # light mode
           sed -i \
             -e 's/--cs:[^;]*/--cs:#FF1493/g' \
             -e 's/--c1:[^;]*/--c1:#FFB6C1/g' \
@@ -33,12 +33,12 @@ jobs:
             -e 's/--c4:[^;]*/--c4:#C71585/g' \
             dist/github-contribution-grid-snake.svg
 
-          # dark mode SVG — same snake/dots + visible empty cells
+          # dark mode — empty cells visíveis (#2d1060 = roxo escuro claro)
           sed -i \
             -e 's/--cs:[^;]*/--cs:#FF1493/g' \
-            -e 's/--c0:[^;]*/--c0:#2d1b2e/g' \
-            -e 's/--ce:[^;]*/--ce:#2d1b2e/g' \
-            -e 's/--c1:[^;]*/--c1:#6b2148/g' \
+            -e 's/--ce:[^;]*/--ce:#2d1060/g' \
+            -e 's/--c0:[^;]*/--c0:#2d1060/g' \
+            -e 's/--c1:[^;]*/--c1:#6b1f6b/g' \
             -e 's/--c2:[^;]*/--c2:#FF69B4/g' \
             -e 's/--c3:[^;]*/--c3:#FF1493/g' \
             -e 's/--c4:[^;]*/--c4:#C71585/g' \
