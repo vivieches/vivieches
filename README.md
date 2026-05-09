@@ -5,7 +5,7 @@
 <!-- ▓▓▓ HERO ▓▓▓ -->
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=FF4DA6,9B5CFF,7B2FBE&height=260&text=Vitoria%20Ferreira&fontSize=54&fontColor=FFFFFF&animation=fadeIn&fontAlignY=42&desc=AI%20Content%20Engineer%20%E2%80%94%20Full%20Stack%20Developer&descAlignY=62&descFontColor=FFE0F0&descFontSize=17"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=FF4DA6&height=260&text=Vitoria%20Ferreira&fontSize=54&fontColor=FFFFFF&animation=fadeIn&fontAlignY=42&desc=AI%20Content%20Engineer%20%E2%80%94%20Full%20Stack%20Developer&descAlignY=62&descFontColor=FFE0F0&descFontSize=17"/>
 
 <br/>
 
