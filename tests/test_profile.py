@@ -86,19 +86,22 @@ class ReadmeTests(unittest.TestCase):
         self.assertTrue(self.readme.startswith(banner))
         self.assertIn(bomberman, self.readme)
 
-    def test_readme_uses_real_profile_links_and_only_the_spotify_placeholder(self):
+    def test_readme_uses_real_profile_links_and_connected_spotify_uid(self):
         required = {
             "https://linkedin.com/in/vitória-ferreira-162643281",
             "https://instagram.com/viviexec.es",
             "https://tiktok.com/@viviexec.es",
             "https://www.youtube.com/@viviwsd",
-            "https://open.spotify.com/",
+            "uid=31yudueg6i5khowcpdmfcs6pfmga",
+            "theme=default",
+            "show_offline=false",
+            "bar_color=0ba800",
             "vivieches/vivieches/output/bomberman-contribution-graph-dark.svg",
             "username=vivieches",
         }
         for value in required:
             self.assertIn(value, self.readme)
-        self.assertEqual(self.readme.count("SPOTIFY_UID"), 2)
+        self.assertNotIn("SPOTIFY_UID", self.readme)
         self.assertNotRegex(self.readme, r"\b(?:USERNAME|YOUR_UID)\b")
 
     def test_readme_has_honest_journey_copy_and_no_old_professional_claims(self):

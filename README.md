@@ -18,15 +18,7 @@ Building toward: Application Security, DevSecOps and Cloud Security.
 
 ### 🎧 Currently playing
 
-<!-- Replace SPOTIFY_UID after connecting the account through spotify-github-profile -->
-<p align="center">
-  <a href="https://open.spotify.com/">
-    <img
-      src="https://spotify-github-profile.kittinanx.com/api/view?uid=SPOTIFY_UID&cover_image=true&theme=compact&background_color=0d0d0f&bar_color=8b5cf6&bar_color_cover=false&border_radius=12&show_offline=true"
-      alt="Vitória's currently playing Spotify track"
-    >
-  </a>
-</p>
+[![Vitória's currently playing Spotify track](https://spotify-github-profile.kittinanx.com/api/view?uid=31yudueg6i5khowcpdmfcs6pfmga&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false&profanity=false&hide_remaster=false&bar_color=0ba800)](https://spotify-github-profile.kittinanx.com/api/view?uid=31yudueg6i5khowcpdmfcs6pfmga&redirect=true)
 
 ### My Tech Journey
 
