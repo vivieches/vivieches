@@ -1,4 +1,5 @@
 from pathlib import Path
+from html import unescape
 import unittest
 from xml.etree import ElementTree as ET
 
@@ -23,28 +24,27 @@ StringSafeLoader.yaml_implicit_resolvers = {
 
 
 class BannerTests(unittest.TestCase):
-    def test_banners_are_safe_responsive_theme_variants(self):
+    def test_dark_banner_is_the_only_safe_responsive_variant(self):
         expected_lines = {
             "Vitória Ferreira",
             "Computer Engineering · Cybersecurity · Python",
             "Building toward a career in cybersecurity, application security and cloud security.",
         }
 
-        for filename in ("banner-dark.svg", "banner-light.svg"):
-            with self.subTest(filename=filename):
-                path = ROOT / "assets" / filename
-                root = ET.parse(path).getroot()
-                self.assertEqual(root.attrib.get("viewBox"), "0 0 1200 360")
-                self.assertEqual(root.attrib.get("role"), "img")
-                raw = path.read_text(encoding="utf-8")
-                self.assertNotIn("<script", raw.lower())
-                self.assertNotIn("<foreignObject", raw)
-                visible_lines = {
-                    "".join(node.itertext()).strip()
-                    for node in root.iter()
-                    if node.tag.endswith("text")
-                }
-                self.assertTrue(expected_lines.issubset(visible_lines))
+        path = ROOT / "assets" / "banner-dark.svg"
+        root = ET.parse(path).getroot()
+        self.assertEqual(root.attrib.get("viewBox"), "0 0 1200 360")
+        self.assertEqual(root.attrib.get("role"), "img")
+        raw = path.read_text(encoding="utf-8")
+        self.assertNotIn("<script", raw.lower())
+        self.assertNotIn("<foreignObject", raw)
+        visible_lines = {
+            "".join(node.itertext()).strip()
+            for node in root.iter()
+            if node.tag.endswith("text")
+        }
+        self.assertTrue(expected_lines.issubset(visible_lines))
+        self.assertFalse((ROOT / "assets" / "banner-light.svg").exists())
 
 
 class ReadmeTests(unittest.TestCase):
@@ -66,6 +66,11 @@ class ReadmeTests(unittest.TestCase):
         positions = [self.readme.index(anchor) for anchor in anchors]
         self.assertEqual(positions, sorted(positions))
 
+    def test_profile_uses_only_dark_visual_variants(self):
+        self.assertNotIn("banner-light.svg", self.readme)
+        self.assertNotIn("bomberman-contribution-graph.svg", self.readme)
+        self.assertIn("bomberman-contribution-graph-dark.svg", self.readme)
+
     def test_readme_uses_real_profile_links_and_only_the_spotify_placeholder(self):
         required = {
             "https://linkedin.com/in/vitória-ferreira-162643281",
@@ -73,7 +78,6 @@ class ReadmeTests(unittest.TestCase):
             "https://tiktok.com/@viviexec.es",
             "https://www.youtube.com/@viviwsd",
             "https://open.spotify.com/",
-            "vivieches/vivieches/output/bomberman-contribution-graph.svg",
             "vivieches/vivieches/output/bomberman-contribution-graph-dark.svg",
             "username=vivieches",
         }
@@ -107,15 +111,20 @@ class ReadmeTests(unittest.TestCase):
         for value in prohibited:
             self.assertNotIn(value, self.readme)
 
-    def test_skill_icon_groups_are_theme_aware_and_supported(self):
+    def test_skill_icon_groups_render_all_icons_in_dark_rows(self):
+        decoded_readme = unescape(self.readme)
         groups = (
             "java,py,mysql,linux,git",
             "spring,powershell,docker,azure,aws,go",
             "cs,dotnet,c,rust,kubernetes,terraform",
         )
         for group in groups:
-            self.assertIn(f"icons?i={group}&theme=dark", self.readme)
-            self.assertIn(f"icons?i={group}&theme=light", self.readme)
+            self.assertIn(f"icons?i={group}&theme=dark", decoded_readme)
+            self.assertNotIn(f"icons?i={group}&theme=light", decoded_readme)
+        journey = self.readme.split("### My Tech Journey", 1)[1].split(
+            "### 💣 My contribution graph", 1
+        )[0]
+        self.assertNotIn("<source", journey)
 
 
 class WorkflowTests(unittest.TestCase):

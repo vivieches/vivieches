@@ -1,18 +1,8 @@
-<picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="./assets/banner-dark.svg"
-  >
-  <source
-    media="(prefers-color-scheme: light)"
-    srcset="./assets/banner-light.svg"
-  >
-  <img
-    src="./assets/banner-dark.svg"
-    alt="Vitória Ferreira — Computer Engineering and Cybersecurity"
-    width="100%"
-  >
-</picture>
+<img
+  src="./assets/banner-dark.svg"
+  alt="Vitória Ferreira — Computer Engineering and Cybersecurity"
+  width="100%"
+>
 
 ## Hi, I'm Vitória 👋
 
@@ -49,11 +39,9 @@ Building toward: Application Security, DevSecOps and Cloud Security.
 Java · Python · SQL · Linux · Git
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=java,py,mysql,linux,git&theme=dark&perline=5">
-    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=java,py,mysql,linux,git&theme=light&perline=5">
-    <img src="https://skillicons.dev/icons?i=java,py,mysql,linux,git&theme=dark&perline=5" alt="Java, Python, SQL, Linux and Git">
-  </picture>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=java,py,mysql,linux,git&amp;theme=dark&amp;perline=5" alt="Java, Python, SQL, Linux and Git">
+  </a>
 </p>
 
 #### Next on my roadmap
@@ -61,11 +49,9 @@ Java · Python · SQL · Linux · Git
 Spring Boot · PowerShell · Docker · Azure · AWS · Go
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=spring,powershell,docker,azure,aws,go&theme=dark&perline=6">
-    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=spring,powershell,docker,azure,aws,go&theme=light&perline=6">
-    <img src="https://skillicons.dev/icons?i=spring,powershell,docker,azure,aws,go&theme=dark&perline=6" alt="Spring Boot, PowerShell, Docker, Azure, AWS and Go">
-  </picture>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=spring,powershell,docker,azure,aws,go&amp;theme=dark&amp;perline=6" alt="Spring Boot, PowerShell, Docker, Azure, AWS and Go">
+  </a>
 </p>
 
 #### Long-term focus
@@ -74,30 +60,18 @@ C#/.NET · C · Rust · Kubernetes · Terraform<br>
 Security focus: Application Security · DevSecOps · Cloud Security · Identity and Access Management
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=cs,dotnet,c,rust,kubernetes,terraform&theme=dark&perline=6">
-    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=cs,dotnet,c,rust,kubernetes,terraform&theme=light&perline=6">
-    <img src="https://skillicons.dev/icons?i=cs,dotnet,c,rust,kubernetes,terraform&theme=dark&perline=6" alt="C sharp and .NET, C, Rust, Kubernetes and Terraform">
-  </picture>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=cs,dotnet,c,rust,kubernetes,terraform&amp;theme=dark&amp;perline=6" alt="C sharp and .NET, C, Rust, Kubernetes and Terraform">
+  </a>
 </p>
 
 ### 💣 My contribution graph
 
-<picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/vivieches/vivieches/output/bomberman-contribution-graph-dark.svg"
-  >
-  <source
-    media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/vivieches/vivieches/output/bomberman-contribution-graph.svg"
-  >
-  <img
-    src="https://raw.githubusercontent.com/vivieches/vivieches/output/bomberman-contribution-graph.svg"
-    alt="Bomberman animation playing across Vitória's GitHub contribution graph"
-    width="100%"
-  >
-</picture>
+<img
+  src="https://raw.githubusercontent.com/vivieches/vivieches/output/bomberman-contribution-graph-dark.svg"
+  alt="Bomberman animation playing across Vitória's GitHub contribution graph"
+  width="100%"
+>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=vivieches&label=PROFILE+VIEWS&color=7c3aed&style=flat-square&abbreviated=true" alt="Profile views">
