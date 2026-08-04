@@ -71,6 +71,21 @@ class ReadmeTests(unittest.TestCase):
         self.assertNotIn("bomberman-contribution-graph.svg", self.readme)
         self.assertIn("bomberman-contribution-graph-dark.svg", self.readme)
 
+    def test_standalone_images_use_complete_single_line_html_tags(self):
+        banner = (
+            '<img src="./assets/banner-dark.svg" '
+            'alt="Vitória Ferreira — Computer Engineering and Cybersecurity" '
+            'width="100%">'
+        )
+        bomberman = (
+            '<img src="https://raw.githubusercontent.com/vivieches/vivieches/'
+            'output/bomberman-contribution-graph-dark.svg" '
+            'alt="Bomberman animation playing across Vitória\'s GitHub contribution graph" '
+            'width="100%">'
+        )
+        self.assertTrue(self.readme.startswith(banner))
+        self.assertIn(bomberman, self.readme)
+
     def test_readme_uses_real_profile_links_and_only_the_spotify_placeholder(self):
         required = {
             "https://linkedin.com/in/vitória-ferreira-162643281",

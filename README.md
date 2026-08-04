@@ -1,8 +1,4 @@
-<img
-  src="./assets/banner-dark.svg"
-  alt="Vitória Ferreira — Computer Engineering and Cybersecurity"
-  width="100%"
->
+<img src="./assets/banner-dark.svg" alt="Vitória Ferreira — Computer Engineering and Cybersecurity" width="100%">
 
 ## Hi, I'm Vitória 👋
 
@@ -67,11 +63,7 @@ Security focus: Application Security · DevSecOps · Cloud Security · Identity 
 
 ### 💣 My contribution graph
 
-<img
-  src="https://raw.githubusercontent.com/vivieches/vivieches/output/bomberman-contribution-graph-dark.svg"
-  alt="Bomberman animation playing across Vitória's GitHub contribution graph"
-  width="100%"
->
+<img src="https://raw.githubusercontent.com/vivieches/vivieches/output/bomberman-contribution-graph-dark.svg" alt="Bomberman animation playing across Vitória's GitHub contribution graph" width="100%">
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=vivieches&label=PROFILE+VIEWS&color=7c3aed&style=flat-square&abbreviated=true" alt="Profile views">
