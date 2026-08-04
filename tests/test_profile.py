@@ -1,5 +1,4 @@
 from pathlib import Path
-from html import unescape
 import struct
 import unittest
 
@@ -42,66 +41,115 @@ class ReadmeTests(unittest.TestCase):
         anchors = [
             "./assets/banner-dark.png",
             "## Hi, I'm Vitória 👋",
-            "### 🎧 Currently playing",
-            "### My Tech Journey",
-            "#### Learning now",
-            "#### Next on my roadmap",
-            "#### Long-term focus",
-            "### 💣 My contribution graph",
-            "Profile views",
+            "### Connect with me",
+            "### Listening to",
+            "## Tech Stack",
+            "#### Languages",
+            "#### Systems & Cloud",
+            "#### Cybersecurity",
+            "## Focus",
+            "## Featured Projects",
+            "## Contribution Graph",
         ]
         positions = [self.readme.index(anchor) for anchor in anchors]
         self.assertEqual(positions, sorted(positions))
 
-    def test_profile_uses_only_dark_visual_variants(self):
+    def test_profile_keeps_the_requested_black_banner_and_theme_aware_graph(self):
         self.assertNotIn("banner-light.svg", self.readme)
         self.assertNotIn("banner-dark.svg", self.readme)
-        self.assertNotIn("bomberman-contribution-graph.svg", self.readme)
+        self.assertIn("bomberman-contribution-graph.svg", self.readme)
         self.assertIn("bomberman-contribution-graph-dark.svg", self.readme)
 
-    def test_standalone_images_use_complete_single_line_html_tags(self):
+    def test_banner_uses_a_complete_single_line_html_tag(self):
         banner = (
             '<img src="./assets/banner-dark.png" '
-            'alt="Vitória Ferreira — Computer Engineering and Cybersecurity" '
-            'width="100%">'
-        )
-        bomberman = (
-            '<img src="https://raw.githubusercontent.com/vivieches/vivieches/'
-            'output/bomberman-contribution-graph-dark.svg" '
-            'alt="Bomberman animation playing across Vitória\'s GitHub contribution graph" '
+            'alt="Vitória Ferreira — Computer Engineering, Cybersecurity and Cloud" '
             'width="100%">'
         )
         self.assertTrue(self.readme.startswith(banner))
-        self.assertIn(bomberman, self.readme)
 
-    def test_readme_uses_real_profile_links_and_connected_spotify_uid(self):
+    def test_readme_preserves_all_confirmed_contact_links(self):
         required = {
             "https://linkedin.com/in/vitória-ferreira-162643281",
             "https://instagram.com/viviexec.es",
             "https://tiktok.com/@viviexec.es",
             "https://www.youtube.com/@viviwsd",
-            "uid=31yudueg6i5khowcpdmfcs6pfmga",
-            "theme=default",
-            "show_offline=false",
-            "bar_color=0ba800",
-            "vivieches/vivieches/output/bomberman-contribution-graph-dark.svg",
-            "username=vivieches",
         }
         for value in required:
             self.assertIn(value, self.readme)
-        self.assertNotIn("SPOTIFY_UID", self.readme)
-        self.assertNotRegex(self.readme, r"\b(?:USERNAME|YOUR_UID)\b")
 
-    def test_readme_has_honest_journey_copy_and_no_old_professional_claims(self):
+    def test_spotify_badge_is_connected_compact_dark_and_clickable(self):
         required = {
-            "Computer Engineering student",
-            "Currently learning: Java, Python, SQL, Linux and cloud fundamentals.",
-            "Building toward: Application Security, DevSecOps and Cloud Security.",
-            "Application Security · DevSecOps · Cloud Security · Identity and Access Management",
+            "uid=31yudueg6i5khowcpdmfcs6pfmga",
+            "cover_image=false",
+            "theme=compact",
+            "background_color=0d0d0f",
+            "bar_color=8b5cf6",
+            "bar_color_cover=false",
+            "border_radius=10",
+            "show_offline=true",
+            "redirect=true",
         }
         for value in required:
             self.assertIn(value, self.readme)
+        self.assertNotIn("cover_image=true", self.readme)
+        self.assertNotIn("theme=default", self.readme)
+        self.assertNotIn("SPOTIFY_UID", self.readme)
+        self.assertNotIn("<iframe", self.readme.lower())
+        self.assertNotIn("autoplay", self.readme.lower())
+        self.assertNotRegex(
+            self.readme.lower(),
+            r"(?:client_secret|access_token|refresh_token)",
+        )
+
+    def test_readme_has_complete_technology_groups_without_levels(self):
+        required = {
+            "Java · Python · Go · C#/.NET · SQL · PowerShell · Bash · C · Rust",
+            "Linux · Windows · Active Directory · Microsoft Entra ID · Azure · AWS · Docker · Kubernetes · Terraform",
+            "Application Security · DevSecOps · Cloud Security · Identity & Access Management",
+        }
+        for value in required:
+            self.assertIn(value, self.readme)
+
+    def test_skill_icons_show_every_supported_technology_in_two_themes(self):
+        icon_groups = (
+            "java,py,go,cs,dotnet,postgres,powershell,bash,c,rust",
+            "linux,windows,azure,aws,docker,kubernetes,terraform",
+        )
+        for group in icon_groups:
+            encoded_group = group.replace(",", "%2C")
+            self.assertIn(f"icons?i={encoded_group}&amp;theme=dark", self.readme)
+            self.assertIn(f"icons?i={encoded_group}&amp;theme=light", self.readme)
+            self.assertIn(f"icons?i={group}&amp;theme=dark", self.readme)
+
+    def test_focus_copy_is_neutral_and_approved(self):
+        required = {
+            "Focused on Application Security, DevSecOps, Cloud Security and Identity & Access Management.",
+            "Exploring the intersection between software engineering, cloud infrastructure and cybersecurity.",
+        }
+        for value in required:
+            self.assertIn(value, self.readme)
+
+    def test_featured_projects_are_real_public_repositories(self):
+        required = {
+            "### Open Studio",
+            "https://github.com/vivieches/open-studio",
+            "### OpenClaw AI Agents",
+            "https://github.com/vivieches/openclaw-ai-agents",
+        }
+        for value in required:
+            self.assertIn(value, self.readme)
+
+    def test_readme_removes_roadmap_statistics_and_old_claims(self):
         prohibited = (
+            "Currently learning",
+            "Learning now",
+            "Next on my roadmap",
+            "Long-term focus",
+            "My Tech Journey",
+            "Profile views",
+            "PROFILE VIEWS",
+            "ghpvc",
             "AI Content Engineer",
             "Full Stack Developer",
             "AI Engineer",
@@ -117,20 +165,14 @@ class ReadmeTests(unittest.TestCase):
         for value in prohibited:
             self.assertNotIn(value, self.readme)
 
-    def test_skill_icon_groups_render_all_icons_in_dark_rows(self):
-        decoded_readme = unescape(self.readme)
-        groups = (
-            "java,py,mysql,linux,git",
-            "spring,powershell,docker,azure,aws,go",
-            "cs,dotnet,c,rust,kubernetes,terraform",
+    def test_bomberman_graph_has_light_and_dark_sources(self):
+        required = (
+            "vivieches/vivieches/output/bomberman-contribution-graph.svg",
+            "vivieches/vivieches/output/bomberman-contribution-graph-dark.svg",
+            "Bomberman animation across Vitória's GitHub contribution graph",
         )
-        for group in groups:
-            self.assertIn(f"icons?i={group}&theme=dark", decoded_readme)
-            self.assertNotIn(f"icons?i={group}&theme=light", decoded_readme)
-        journey = self.readme.split("### My Tech Journey", 1)[1].split(
-            "### 💣 My contribution graph", 1
-        )[0]
-        self.assertNotIn("<source", journey)
+        for value in required:
+            self.assertIn(value, self.readme)
 
 
 class WorkflowTests(unittest.TestCase):
