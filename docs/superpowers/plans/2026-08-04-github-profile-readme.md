@@ -310,4 +310,3 @@ git log --oneline --decorate origin/main..HEAD
 ```
 
 Expected: a clean `main` branch ahead of `origin/main` with the design, plan, banner, README, and workflow commits. Do not push unless explicitly requested.
-

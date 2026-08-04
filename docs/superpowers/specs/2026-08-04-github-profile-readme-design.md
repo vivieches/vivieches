@@ -62,4 +62,3 @@ Verify the final repository by:
 - checking all required files and important social URLs;
 - validating referenced Skill Icons IDs against the official project list;
 - reviewing Git diffs to ensure no unrelated content changed.
-

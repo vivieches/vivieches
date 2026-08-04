@@ -20,7 +20,7 @@ Computer Engineering student exploring cybersecurity, software development, Linu
 
 > Building toward a career in cybersecurity, application security and cloud security.
 
-Currently learning: Java, Python, SQL, Linux and cloud fundamentals.  
+Currently learning: Java, Python, SQL, Linux and cloud fundamentals.<br>
 Building toward: Application Security, DevSecOps and Cloud Security.
 
 <p align="left">
@@ -70,7 +70,7 @@ Spring Boot · PowerShell · Docker · Azure · AWS · Go
 
 #### Long-term focus
 
-C#/.NET · C · Rust · Kubernetes · Terraform  
+C#/.NET · C · Rust · Kubernetes · Terraform<br>
 Security focus: Application Security · DevSecOps · Cloud Security · Identity and Access Management
 
 <p align="center">
