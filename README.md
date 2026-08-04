@@ -1,4 +1,4 @@
-<img src="./assets/banner-dark.svg" alt="Vitória Ferreira — Computer Engineering and Cybersecurity" width="100%">
+<img src="./assets/banner-dark.png" alt="Vitória Ferreira — Computer Engineering and Cybersecurity" width="100%">
 
 ## Hi, I'm Vitória 👋
 

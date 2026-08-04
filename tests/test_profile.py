@@ -1,7 +1,7 @@
 from pathlib import Path
 from html import unescape
+import struct
 import unittest
-from xml.etree import ElementTree as ET
 
 import yaml
 
@@ -24,26 +24,13 @@ StringSafeLoader.yaml_implicit_resolvers = {
 
 
 class BannerTests(unittest.TestCase):
-    def test_dark_banner_is_the_only_safe_responsive_variant(self):
-        expected_lines = {
-            "Vitória Ferreira",
-            "Computer Engineering · Cybersecurity · Python",
-            "Building toward a career in cybersecurity, application security and cloud security.",
-        }
-
-        path = ROOT / "assets" / "banner-dark.svg"
-        root = ET.parse(path).getroot()
-        self.assertEqual(root.attrib.get("viewBox"), "0 0 1200 360")
-        self.assertEqual(root.attrib.get("role"), "img")
-        raw = path.read_text(encoding="utf-8")
-        self.assertNotIn("<script", raw.lower())
-        self.assertNotIn("<foreignObject", raw)
-        visible_lines = {
-            "".join(node.itertext()).strip()
-            for node in root.iter()
-            if node.tag.endswith("text")
-        }
-        self.assertTrue(expected_lines.issubset(visible_lines))
+    def test_requested_dark_png_is_the_only_profile_banner(self):
+        path = ROOT / "assets" / "banner-dark.png"
+        raw = path.read_bytes()
+        self.assertEqual(raw[:8], b"\x89PNG\r\n\x1a\n")
+        self.assertEqual(struct.unpack(">II", raw[16:24]), (2172, 724))
+        self.assertGreater(len(raw), 1_000_000)
+        self.assertFalse((ROOT / "assets" / "banner-dark.svg").exists())
         self.assertFalse((ROOT / "assets" / "banner-light.svg").exists())
 
 
@@ -53,7 +40,7 @@ class ReadmeTests(unittest.TestCase):
 
     def test_sections_follow_the_approved_editorial_order(self):
         anchors = [
-            "./assets/banner-dark.svg",
+            "./assets/banner-dark.png",
             "## Hi, I'm Vitória 👋",
             "### 🎧 Currently playing",
             "### My Tech Journey",
@@ -68,12 +55,13 @@ class ReadmeTests(unittest.TestCase):
 
     def test_profile_uses_only_dark_visual_variants(self):
         self.assertNotIn("banner-light.svg", self.readme)
+        self.assertNotIn("banner-dark.svg", self.readme)
         self.assertNotIn("bomberman-contribution-graph.svg", self.readme)
         self.assertIn("bomberman-contribution-graph-dark.svg", self.readme)
 
     def test_standalone_images_use_complete_single_line_html_tags(self):
         banner = (
-            '<img src="./assets/banner-dark.svg" '
+            '<img src="./assets/banner-dark.png" '
             'alt="Vitória Ferreira — Computer Engineering and Cybersecurity" '
             'width="100%">'
         )
