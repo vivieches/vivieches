@@ -40,16 +40,17 @@ class ReadmeTests(unittest.TestCase):
     def test_sections_follow_the_approved_editorial_order(self):
         anchors = [
             "./assets/banner-dark.png",
-            "## Hi, I'm Vitória 👋",
+            "## ◆ About Me",
             "### Connect with me",
-            "### Listening to",
-            "## Tech Stack",
-            "#### Languages",
-            "#### Systems & Cloud",
-            "#### Cybersecurity",
-            "## Focus",
-            "## Featured Projects",
-            "## Contribution Graph",
+            "## ◆ Listening to",
+            "## ◆ Tech Stack",
+            "— Languages —",
+            "— Systems & Cloud —",
+            "— Security & Identity —",
+            "## ◆ Focus",
+            "## ◆ Featured Projects",
+            "## ◆ Currently Building",
+            "## ◆ Contribution Graph",
         ]
         positions = [self.readme.index(anchor) for anchor in anchors]
         self.assertEqual(positions, sorted(positions))
@@ -78,21 +79,23 @@ class ReadmeTests(unittest.TestCase):
         for value in required:
             self.assertIn(value, self.readme)
 
-    def test_spotify_badge_is_connected_compact_dark_and_clickable(self):
+    def test_spotify_badge_is_connected_small_purple_and_clickable(self):
         required = {
             "uid=31yudueg6i5khowcpdmfcs6pfmga",
             "cover_image=false",
-            "theme=compact",
+            "theme=natemoo-re",
             "background_color=0d0d0f",
             "bar_color=8b5cf6",
             "bar_color_cover=false",
             "border_radius=10",
             "show_offline=true",
             "redirect=true",
+            'width="320"',
         }
         for value in required:
             self.assertIn(value, self.readme)
         self.assertNotIn("cover_image=true", self.readme)
+        self.assertNotIn("theme=compact", self.readme)
         self.assertNotIn("theme=default", self.readme)
         self.assertNotIn("SPOTIFY_UID", self.readme)
         self.assertNotIn("<iframe", self.readme.lower())
@@ -101,15 +104,35 @@ class ReadmeTests(unittest.TestCase):
             self.readme.lower(),
             r"(?:client_secret|access_token|refresh_token)",
         )
+        music = self.readme.split("## ◆ Listening to", 1)[1].split(
+            "## ◆ Tech Stack", 1
+        )[0]
+        self.assertIn('<p align="center">', music)
+        self.assertIn("currently playing or recently played Spotify track", music)
 
-    def test_readme_has_complete_technology_groups_without_levels(self):
+    def test_readme_has_visual_technology_groups_without_levels(self):
         required = {
-            "Java · Python · Go · C#/.NET · SQL · PowerShell · Bash · C · Rust",
-            "Linux · Windows · Active Directory · Microsoft Entra ID · Azure · AWS · Docker · Kubernetes · Terraform",
-            "Application Security · DevSecOps · Cloud Security · Identity & Access Management",
+            "— Languages —",
+            "— Systems & Cloud —",
+            "— Security & Identity —",
         }
         for value in required:
             self.assertIn(value, self.readme)
+
+    def test_security_and_identity_are_compact_purple_badges(self):
+        labels = (
+            "Application%20Security",
+            "DevSecOps",
+            "Cloud%20Security",
+            "Active%20Directory",
+            "Microsoft%20Entra%20ID",
+            "Identity%20%26%20Access%20Management",
+        )
+        for label in labels:
+            self.assertRegex(
+                self.readme,
+                rf"img\.shields\.io/badge/{label}-(?:6d28d9|7c3aed|8b5cf6|a78bfa)",
+            )
 
     def test_skill_icons_show_every_supported_technology_in_two_themes(self):
         icon_groups = (
@@ -132,13 +155,32 @@ class ReadmeTests(unittest.TestCase):
 
     def test_featured_projects_are_real_public_repositories(self):
         required = {
-            "### Open Studio",
+            "🎬 Open Studio",
             "https://github.com/vivieches/open-studio",
-            "### OpenClaw AI Agents",
+            "🤖 OpenClaw AI Agents",
             "https://github.com/vivieches/openclaw-ai-agents",
+            "Open-source creator workspace",
+            "role-based multi-agent framework",
         }
         for value in required:
             self.assertIn(value, self.readme)
+        projects = self.readme.split("## ◆ Featured Projects", 1)[1].split(
+            "## ◆ Currently Building", 1
+        )[0]
+        self.assertIn("<table>", projects)
+        self.assertEqual(projects.count('<td width="50%" valign="top">'), 2)
+        self.assertIn("View%20repository", projects)
+
+    def test_currently_building_is_visual_and_has_no_invented_percentages(self):
+        current = self.readme.split("## ◆ Currently Building", 1)[1].split(
+            "## ◆ Contribution Graph", 1
+        )[0]
+        self.assertIn("<table>", current)
+        self.assertIn("Open Studio", current)
+        self.assertIn("OpenClaw AI Agents", current)
+        self.assertIn("Active%20development", current)
+        self.assertIn("Maintained", current)
+        self.assertNotRegex(current, r"\b\d{1,3}%")
 
     def test_readme_removes_roadmap_statistics_and_old_claims(self):
         prohibited = (
@@ -150,6 +192,8 @@ class ReadmeTests(unittest.TestCase):
             "Profile views",
             "PROFILE VIEWS",
             "ghpvc",
+            "github-profile-trophy",
+            "github-readme-stats",
             "AI Content Engineer",
             "Full Stack Developer",
             "AI Engineer",
