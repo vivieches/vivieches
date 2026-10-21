@@ -12,7 +12,6 @@ Computer Engineering student based in Spain, focused on cybersecurity, cloud inf
   <a href="https://linkedin.com/in/vitória-ferreira-162643281"><img src="https://img.shields.io/badge/LinkedIn-6d28d9?style=flat-square&amp;logo=linkedin&amp;logoColor=white" alt="Connect with Vitória on LinkedIn"></a>
   <a href="https://instagram.com/viviexec.es"><img src="https://img.shields.io/badge/Instagram-7c3aed?style=flat-square&amp;logo=instagram&amp;logoColor=white" alt="Follow Vitória on Instagram"></a>
   <a href="https://tiktok.com/@viviexec.es"><img src="https://img.shields.io/badge/TikTok-8b5cf6?style=flat-square&amp;logo=tiktok&amp;logoColor=white" alt="Follow Vitória on TikTok"></a>
-  <a href="https://www.youtube.com/@viviwsd"><img src="https://img.shields.io/badge/YouTube-a78bfa?style=flat-square&amp;logo=youtube&amp;logoColor=17121f" alt="Watch Vitória on YouTube"></a>
 </p>
 
 ## ◆ Listening to
